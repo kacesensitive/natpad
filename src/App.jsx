@@ -203,7 +203,7 @@ function App() {
               <Modal.Body>
                 <div className="text-center">
                   <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
-                    This web-app is meant to help the deaf and hard of hearing
+                    This web-app is meant to help the D/deaf and hard of hearing
                     community communicate with people who do not know ASL.
                     Essentially a lightweight digital replacement for carrying a
                     notepad.
