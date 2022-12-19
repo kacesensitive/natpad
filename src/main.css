@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.moveable-control-box {
+  --moveable-color: (68, 68, 68, 0) !important;
+}

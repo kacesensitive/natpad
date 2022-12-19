@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  width: 97%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.moveable-control-box {
+  --moveable-color: (68, 68, 68, 0) !important;
+}

@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.canned-text-card {
+  background-color: #2b2b2b;
+}
+
+.warning-container {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.warning-container.visible {
+  opacity: 1;
+}
+
+.warning-container.hidden {
+  opacity: 0;
+}
+
+.dark {
+  background-color: #2b2b2b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark.dark-scheme {
+    background: #2b2b2b;
+  }
+}
+
+.display-card-upsidedown {
+  width: 95%;
+  min-width: 95%;
+  min-height: 340px;
+  height: 340px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  transform: rotate(-180deg);
+}
+
+.display-card {
+  width: 95%;
+  min-width: 95%;
+  min-height: 340px;
+  height: 340px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.display-card-upsidedown-fs {
+  height: 92vh;
+  width: 92vw;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  transform: rotate(-180deg);
+}
+
+.display-card-fs {
+  height: 92vh;
+  width: 92vw;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.input-field {
+  width: 95%;
+  min-width: 95%;
+  max-width: 95%;
+  display: flex;
+  margin: auto;
+}
+
+.flip-button-right {
+  float: right;
+  padding-left: 75%;
+}
+
+.moveable-control-box {
+  --moveable-color: (68, 68, 68, 0) rgba !important;
+}
+
+.expand-button-container {
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.expand-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.expand-button.focus\:\!ring-2:focus {
+  --tw-ring-offset-shadow: null !important;
+}
