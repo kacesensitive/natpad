@@ -6,3 +6,8 @@ Essentially a lightweight digital replacement for carrying a
 notepad.
 
 wip
+
+bugs
+
+- canned text id's
+- font size bug

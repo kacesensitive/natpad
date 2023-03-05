@@ -11,6 +11,7 @@
   "dependencies": {
     "flowbite": "^1.5.4",
     "flowbite-react": "^0.3.5",
+    "rc-slider": "^10.1.0",
     "react": "^18.2.0",
     "react-color": "^2.19.3",
     "react-cookie-consent": "^8.0.1",

@@ -20,7 +20,6 @@ import { SliderPicker } from "react-color";
 import { Footer_ } from "./Footer";
 import "./App.css";
 import "flowbite";
-import Moveable from "react-moveable";
 
 function App() {
   const cookies = new Cookies();
@@ -286,6 +285,7 @@ function App() {
                       setCannedResponsePicker(true);
                     }}
                     color="#2b2b2b"
+                    title="Canned Responses"
                   >
                     <GiSodaCan size={17} />
                   </Button>
@@ -295,7 +295,8 @@ function App() {
                   <Button
                     className="flip-button"
                     onClick={() => {
-                      if (
+                      if (mainText === "") {
+                      } else if (
                         cannedResponses.filter((e) => {
                           if (e.text === mainText) return true;
                         }).length < 1
@@ -318,6 +319,7 @@ function App() {
                       }
                     }}
                     color="#2b2b2b"
+                    title="Add Canned Response"
                   >
                     <IoMdAddCircle size={17} />
                   </Button>
@@ -346,6 +348,7 @@ function App() {
                     setFlipped(!flipped);
                   }}
                   color="#2b2b2b"
+                  title="Flip Text"
                 >
                   <TbRotate360 size={17} />
                 </Button>
@@ -358,6 +361,7 @@ function App() {
                     }
                   }}
                   color="#2b2b2b"
+                  title="Increase Font Size"
                 >
                   <AiOutlineArrowUp size={17} />
                 </Button>
@@ -370,6 +374,7 @@ function App() {
                     }
                   }}
                   color="#2b2b2b"
+                  title="Decrease Font Size"
                 >
                   <AiOutlineArrowDown size={17} />
                 </Button>
@@ -380,6 +385,7 @@ function App() {
                     setFontColorPicker(!fontColorPicker);
                   }}
                   color="#2b2b2b"
+                  title="Set Text Color"
                 >
                   <AiOutlineFontColors size={17} />
                 </Button>
@@ -390,6 +396,7 @@ function App() {
                     setBgColorPicker(!bgColorPicker);
                   }}
                   color="#2b2b2b"
+                  title="Set Background Color"
                 >
                   <IoIosColorPalette size={17} />
                 </Button>
@@ -400,6 +407,7 @@ function App() {
                     setCookie("mainText", "");
                   }}
                   color="#2b2b2b"
+                  title="Clear Text"
                 >
                   <BiEraser size={17} />
                 </Button>
@@ -409,6 +417,7 @@ function App() {
                     setHelp(true);
                   }}
                   color="#2b2b2b"
+                  title="Help"
                 >
                   <AiOutlineQuestion size={17} />
                 </Button>
