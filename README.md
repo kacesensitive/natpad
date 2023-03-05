@@ -1,13 +1,6 @@
-#NatPad
+# NatPad
 
-This web-app is meant to help the D/deaf and hard of hearing
+This web-app is meant to help the d/Deaf and hard of hearing
 community communicate with people who do not know ASL.
 Essentially a lightweight digital replacement for carrying a
 notepad.
-
-wip
-
-bugs
-
-- canned text id's
-- font size bug
