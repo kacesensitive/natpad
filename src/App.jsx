@@ -208,6 +208,19 @@ function App() {
                     notepad.
                   </h3>
                 </div>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.natpadapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/google-play-badge.png"
+                      alt="Download on Google Play"
+                      width="180"
+                    />
+                  </a>
+                </div>
               </Modal.Body>
             </Modal>
             <Modal
